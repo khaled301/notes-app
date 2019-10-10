@@ -13,3 +13,22 @@ console.log(validator.isURL('https://khaled@psionic.io'));
 const chalk = require('chalk');
 
 log(chalk.blue.bgYellow.inverse('Success!'));
+
+
+***************************************************
+
+
+const log = console.log;
+
+const msg = getNotes();
+
+log(chalk.green.inverse.bold(msg));
+
+
+/**
+ * Access command line argument
+ *
+ * (argv) = argument vector => array that contains all of the arguments provided
+ */
+
+log(process.argv[2]);
