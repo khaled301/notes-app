@@ -1,0 +1,15 @@
+const validator = require('validator');
+
+const getNotes = require('./notes');
+
+
+const msg = getNotes();
+
+console.log(msg);
+
+// console.log(validator.isEmail('khaled@psionic.io'));
+console.log(validator.isURL('https://khaled@psionic.io'));
+
+const chalk = require('chalk');
+
+log(chalk.blue.bgYellow.inverse('Success!'));
